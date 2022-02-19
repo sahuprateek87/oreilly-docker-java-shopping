@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: djshopfront
-        image: sahuprateek87/djshopfront:latest
+        image: danielbryantuk/djshopfront:latest
         ports:
         - containerPort: 8010
         livenessProbe:
