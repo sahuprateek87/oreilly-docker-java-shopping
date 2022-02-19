@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: stockmanager
-        image: danielbryantuk/djstockmanager:latest
+        image: sahuprateek87/djstockmanager:latest
         ports:
         - containerPort: 8030
         livenessProbe:
