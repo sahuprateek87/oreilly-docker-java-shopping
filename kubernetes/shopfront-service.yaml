@@ -13,6 +13,7 @@ spec:
   - protocol: TCP
     port: 8010
     name: http
+    targetPort: 8010
 
 ---
 apiVersion: apps/v1
