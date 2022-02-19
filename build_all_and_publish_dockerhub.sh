@@ -3,21 +3,21 @@
 echo "dockerhub\`s username: $1"
 
 cd shopfront
-mvn clean install
+/opt/maven/bin/mvn clean install
 if docker build -t $1/djshopfront . ; then
   docker push sahuprateek87/djshopfront
 fi
 cd ..
 
 cd productcatalogue
-mvn clean install
+/opt/maven/bin/mvn clean install
 if docker build -t $1/djproductcatalogue . ; then
   docker push sahuprateek87/djproductcatalogue
 fi
 cd ..
 
 cd stockmanager
-mvn clean install
+/opt/maven/bin/mvn clean install
 if docker build -t $1/djstockmanager . ; then
   docker push sahuprateek87/djstockmanager
 fi
